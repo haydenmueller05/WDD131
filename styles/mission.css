@@ -1,0 +1,50 @@
+body{
+    margin: auto;
+    max-width: 800px;
+}
+
+.fancy{
+    font-family: "Times New Roman", Times, serif;
+    
+    text-align: center;
+}
+header{
+    margin-top:100px;
+}
+header h1{
+    font-size:3.5em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+header h3 {
+    font-size:1.5em;
+    color:rgb(54, 153, 214);
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+main p{
+    font-size:1.7em;
+}
+main li{
+    font-size:1.7em;
+    margin-top:25px;
+    margin-bottom:50px;
+}
+
+.italic     {
+    font-style: italic;
+}
+
+footer img{
+    
+    width:200px;
+    margin:auto;
+}
+footer{
+    margin-top:10%;
+    text-align: center;
+    margin-bottom: 10%;
+
+}
