@@ -1,0 +1,55 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(193, 193, 193);
+    border: 2px solid rgb(139, 139, 139); 
+    outline: 2px solid rgb(139, 139, 139); 
+    outline-offset: 1px;
+    height:900px;
+    width:900px;
+    margin-top:5%;
+}
+
+header{
+    text-align: center;
+    margin:0;
+}
+header p{
+    color:rgba(10, 100, 159);
+    font-size:1.5em;
+}
+.line{
+    color:rgba(10, 100, 159);
+    height:2px;
+     border-color: rgba(10, 100, 159);
+   background-color: rgba(10, 100, 159);
+   width:80%;
+    
+}
+ul {
+  list-style-type: none;
+}
+
+h2{
+    font-size: 2em;
+}
+.list li{
+    font-size:1.2em;
+}
+main img{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+main h2, ul{
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+main h2{
+    text-align: center;
+}
+main{
+    margin-top:5%;
+     
+  
+}
