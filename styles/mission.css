@@ -1,15 +1,29 @@
 body{
-    margin: auto;
-    max-width: 800px;
+    margin:auto;
 }
 
-.fancy{
+.container{
+    margin: auto;
+    max-width: 800px;
+    outline: 2px solid rgb(117, 117, 117);
+    outline-offset: 125px;
+    margin-top:10%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.line{
+    background-color: gray;
+    height:2px;
+    border:none;
+}
+#fancy{
     font-family: "Times New Roman", Times, serif;
     
     text-align: center;
 }
 header{
-    margin-top:100px;
+    margin-top:10%;
 }
 header h1{
     font-size:3.5em;

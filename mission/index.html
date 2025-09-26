@@ -4,38 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/mission.css">
+    <script src="../javascript/mission.js" defer></script>
     <title>Mission Statement</title>
 </head>
 <body>
-    <header>
-        <h1 class="fancy">MISSION STATEMENT</h1>
-        <h3 class="fancy">BRIGHAM YOUNG UNVIERSITY-IDAHO</h3>
-        <hr>
-    </header>
-    <main>
-        <p>Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of 
-        Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, 
-        the Church, and their communities.</p>
+    <select>
 
-        <p class="italic">The university does this by:</p>
-        <ol>
-            <li>Building testimonies of the restored gospel of Jesus Christ and fostering its 
-                principles in a wholesome academic, cultural, and social environment.</li>
-            <li>
-                Providing a high-quality education that prepares students of diverse interests 
-                and abilities for lifelong learning and employment.
-            </li>
-            <li>
-                Serving as many students as possible within resource constraints. 
-            </li>
-            <li>
-                Delivering education that is affordable for students and the Church.
-            </li>
-        </ol>
-        
-    </main>
-    <footer>
-        <img src="../images/Brigham_Young_University–Idaho_logo.svg.png" alt="BYU IDAHO">
-    </footer>
+    <option>Choose Mode</option>
+
+    <option value="dark">Dark</option>
+
+    <option value="light">Light</option>
+
+</select>              
+      <div class="container">         
+            <header>
+                <h1 id="fancy">MISSION STATEMENT</h1>
+                <h3 id="fancy">BRIGHAM YOUNG UNVIERSITY-IDAHO</h3>
+                <hr class="line">
+            </header>
+            <main>
+                <p>Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of 
+                Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, 
+                the Church, and their communities.</p>
+
+                <p class="italic">The university does this by:</p>
+                <ol id="listid">
+                    <li class="listtext">Building testimonies of the restored gospel of Jesus Christ and fostering its 
+                        principles in a wholesome academic, cultural, and social environment.</li>
+                    <li class="listtext">
+                        Providing a high-quality education that prepares students of diverse interests 
+                        and abilities for lifelong learning and employment.
+                    </li>
+                    <li class="listtext">
+                        Serving as many students as possible within resource constraints. 
+                    </li>
+                    <li class="listtext">
+                        Delivering education that is affordable for students and the Church.
+                    </li>
+                </ol>
+                
+            </main>
+            <footer>
+                <img id= "byuilogo" src="../images/Brigham_Young_University–Idaho_logo.svg.png" alt="BYU IDAHO">
+            </footer>
+        </div>     
 </body>
 </html>
