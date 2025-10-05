@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
 :root {
-  --primary-color: #52489c;
+  --primary-color: #3a3a3a;
   --secondary-color: #59c3c3;
   --accent-color: #f45b69;
   --text-dark: #333;
@@ -22,11 +22,13 @@ header {
   color: var(--text-light);
   padding: 1rem;
   position: relative;
+  
 }
 
 header h1 {
   margin: 0;
   font-family: var(--secondary-font);
+  text-align: center;
 }
 
 #menuButton {
@@ -41,7 +43,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: none; /* hidden by default for mobile */
+  display: none; 
   flex-direction: column;
   background: var(--primary-color);
 }
@@ -73,7 +75,8 @@ main {
   height: 250px;
   object-fit: cover;
   max-width: 100%;
-  border: 3px solid #555;
+  border: 5px solid white;       /* white outline */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* drop shadow */
   border-radius: 5px;
 }
 
@@ -84,20 +87,20 @@ footer {
   padding: 1rem;
 }
 
-/* Tablet breakpoint */
+
 @media screen and (min-width: 700px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Desktop breakpoint */
+
 @media screen and (min-width: 1000px) {
   #menuButton {
-    display: none; /* no menu button on wide screens */
+    display: none; 
   }
   nav ul {
-    display: flex; /* show nav horizontally */
+    display: flex; 
     flex-direction: row;
     justify-content: center;
   }
