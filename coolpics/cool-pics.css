@@ -7,9 +7,10 @@
   --text-dark: #333;
   --text-light: #ebebeb;
   --primary-font: Arial, Helvetica, sans-serif;
-  --secondary-font: 'Mooli', sans-serif;
+  --secondary-font: "Mooli", sans-serif;
 }
 
+/* General Layout */
 body {
   margin: 0;
   font-family: var(--primary-font);
@@ -22,13 +23,12 @@ header {
   color: var(--text-light);
   padding: 1rem;
   position: relative;
-  
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
   font-family: var(--secondary-font);
-  text-align: center;
 }
 
 #menuButton {
@@ -39,17 +39,17 @@ header h1 {
   cursor: pointer;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: none; 
   flex-direction: column;
   background: var(--primary-color);
 }
 
 nav ul li {
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 nav ul li a {
@@ -59,6 +59,11 @@ nav ul li a {
   padding: 0.8em;
 }
 
+.hide {
+  display: none;
+}
+
+/* Main */
 main {
   padding: 1em;
   text-align: center;
@@ -74,12 +79,13 @@ main {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  max-width: 100%;
-  border: 5px solid white;       /* white outline */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* drop shadow */
+  border: 5px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  cursor: pointer;
 }
 
+/* Footer */
 footer {
   background: var(--primary-color);
   color: var(--text-light);
@@ -87,20 +93,19 @@ footer {
   padding: 1rem;
 }
 
-
+/* Responsive Layouts */
 @media screen and (min-width: 700px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-
 @media screen and (min-width: 1000px) {
   #menuButton {
-    display: none; 
+    display: none;
   }
   nav ul {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: center;
   }
@@ -110,4 +115,39 @@ footer {
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+/* Modal (dialog) */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+dialog img {
+  width: 90%;
+  max-height: 100%;
+  display: block;
+  margin: 20vh auto;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+.close-viewer {
+  position: absolute;
+  top: 20vh;
+  right: 5%;
+  font-size: 2rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
 }
