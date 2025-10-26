@@ -41,10 +41,10 @@ const movies = [
   }
 ];
 
-// Grab the section where the movies will go
+
 const movieList = document.querySelector("#movie-list");
 
-// Loop through each movie and create HTML for it
+
 movies.forEach(movie => {
   const movieArticle = document.createElement("article");
   movieArticle.classList.add("movie");
@@ -59,6 +59,5 @@ movies.forEach(movie => {
     <p id="desc">${movie.description}</p>
   `;
 
-  // Add the new movie to the section
   movieList.appendChild(movieArticle);
 });
