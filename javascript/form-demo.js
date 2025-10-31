@@ -64,3 +64,38 @@ function togglePaymentDetails(e) {
 document
   .querySelector("#paymentMethod")
   .addEventListener("change", togglePaymentDetails);
+
+  // Additional JavaScript for successful form submission and redirect
+document.querySelector("#checkoutForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // prevent default submit first
+
+  const form = event.target;
+  const payment = form.paymentMethod.value;
+  const fullName = form.fullName.value.trim();
+  const email = form.email.value.trim();
+  const address = form.address.value.trim();
+
+  // basic checks
+  if (!fullName || !email || !address || !payment) {
+    showErrors(["Please fill out all required fields."]);
+    return;
+  }
+
+  if (payment === "creditCard") {
+    const cardNumber = form.creditCardNumber.value.trim();
+    if (!cardNumber || cardNumber.length !== 16 || isNaN(cardNumber)) {
+      showErrors(["Please enter a valid 16-digit credit card number."]);
+      return;
+    }
+  } else if (payment === "paypal") {
+    const paypalUsername = form.paypalUsername.value.trim();
+    if (!paypalUsername) {
+      showErrors(["Please enter your PayPal username."]);
+      return;
+    }
+  }
+
+  // if all checks passed, clear any errors and redirect
+  document.querySelector(".errors").innerHTML = "";
+  window.location.href = "completed.html";
+});
