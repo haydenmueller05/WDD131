@@ -1,0 +1,165 @@
+/* --- Reset and Base --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d1d1d;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* --- Main Grid --- */
+.main-grid {
+  display: grid;
+  grid-template-areas:
+    "front"
+    "back"
+    "button";
+  justify-items: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* --- Card Common Styles --- */
+.card-grid {
+  width: 360px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: grid;
+  gap: 10px;
+}
+
+/* --- Card Front --- */
+.front {
+  grid-area: front;
+  grid-template-rows: auto auto auto;
+  position: relative;
+  z-index: 2;
+}
+
+.front .total {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.front label {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.front input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.card-holder input{
+    width:50%;
+    align-items: flex-end;
+    display: flex;
+    
+}
+.exp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 5px;
+}
+
+.exp-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.exp-inputs input {
+  width: 48px;
+  text-align: center;
+}
+
+/* --- Card Back --- */
+.back {
+  grid-area: back;
+  background-color: #d9d9d9;
+  grid-template-rows: 25px auto;
+  padding: 15px;
+  width: 360px;
+  margin-top: -40px;
+  z-index: 1;
+}
+
+.black-bar {
+  width: 100%;
+  height: 25px;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+.cvc {
+  justify-self: end;
+  margin-top: 120px;
+  text-align: right;
+}
+
+.cvc label {
+  font-size: 0.8rem;
+  display: block;
+}
+
+.cvc input {
+  width: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+/* --- Button --- */
+.submit-btn {
+  grid-area: button;
+  padding: 8px 20px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* --- Card Front --- */
+.front {
+  grid-area: front;
+  grid-template-rows: auto auto auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Add the emoji */
+.front::after {
+  content: "💳";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 3rem;
+}
+
+/* --- Card Back --- */
+.back {
+  grid-area: back;
+  background-color: #d9d9d9;
+  grid-template-rows: 25px auto;
+  padding: 15px;
+  height:250px;
+  width: 360px;
+  margin-top: -225px;
+  margin-left: 250px; /* moves card to the right */
+  z-index: 1;
+}
