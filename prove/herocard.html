@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Character Card</title>
+
+    <!-- Social Media Meta Tags -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Epic Character Card">
+    <meta property="og:description" content="A dynamic RPG-style character card built in JavaScript.">
+    <meta property="og:url" content="https://example.com/charactercard">
+    <meta property="og:image" content="https://example.com/charactercard/social-preview.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Epic Character Card">
+    <meta name="twitter:description" content="A dynamic RPG-style character card built in JavaScript.">
+    <meta name="twitter:image" content="https://example.com/charactercard/social-preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../images/131 icon.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../styles/herocard.css">
+  </head>
+  <body>
+    
+    <div class="card">
+      <img id="charImage" src="../images/snortleblat.webp" alt="snortlebat">
+
+      <h2 id="charName"></h2>
+      <p><strong>Class:</strong> <span id="charClass"></span></p>
+      <p><strong>Level:</strong> <span id="charLevel"></span></p>
+      <p><strong>Health:</strong> <span id="charHealth"></span></p>
+
+      <button id="attackBtn">Attack</button>
+      <button id="levelBtn">Level Up</button>
+    </div>
+
+    <script src="../javascript/herocard.js"></script>
+  </body>
+</html>
