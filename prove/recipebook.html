@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>RecipeBook – Simple Recipes for Everyone</title>
+  <meta name="description" content="A collection of easy, delicious recipes with images, ratings, and step-by-step instructions." />
+
+  <!-- Social Media Meta (Open Graph) -->
+  <meta property="og:title" content="RecipeBook – Simple Recipes for Everyone">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Browse easy recipes with images, ratings, and instructions.">
+  <meta property="og:image" content="./images/placeholder-share.jpg">
+  <meta property="og:url" content="http://example.com/recipes/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="../styles/recipebook.css" />
+  <script type="module" src="../javascript/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="../images/recipe-book.png" alt="recipe book icon" class="logo">
+      <h1>RecipeBook</h1>
+    </div>
+
+    <form class="search">
+      <input type="search" placeholder="Find a recipe" aria-label="Search recipes">
+      <button aria-label="Search">
+        🔍
+      </button>
+    </form>
+  </header>
+
+  <main>
+
+    <!-- One recipe card (JS will eventually replace with dynamic content) -->
+    <article class="recipe-card">
+      <img src="../images/apple-crisp.jpg" alt="recipe image" class="recipe-img">
+
+      <div class="recipe-content">
+        <span class="tag">dessert</span>
+
+        <h2 class="recipe-title">Apple Crisp</h2>
+
+        <!-- Accessible rating -->
+        <span
+          class="rating"
+          role="img"
+          aria-label="Rating: 4 out of 5 stars"
+        >
+          <span aria-hidden="true">⭐</span>
+          <span aria-hidden="true">⭐</span>
+          <span aria-hidden="true">⭐</span>
+          <span aria-hidden="true">⭐</span>
+          <span aria-hidden="true">☆</span>
+        </span>
+
+        <!-- This is hidden on mobile, shown on desktop -->
+        <p class="description">
+          A simple, warm fall dessert with apples, oats, and cinnamon.
+        </p>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="social">
+      <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+      <a href="#"><img src="../images/instagram_icon.svg" alt="instagram icon"></a>
+      <a href="#"><img src="../images/youtube_icon.svg" alt="youtube icon"></a>
+      <a href="#"><img src="../images/pinterest_icon.svg" alt="pinterest icon"></a>
+    </div>
+
+    <p class="attribution">
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+        Recipe icons created by Freepik - Flaticon
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
